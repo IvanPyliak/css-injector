@@ -13,7 +13,10 @@
         rows="10"
         placeholder="Enter CSS to apply to this tab"
       ></textarea>
-      <button id="apply-button" type="button" disabled>OK</button>
+      <div class="actions">
+        <button id="reset-button" type="button">Reset</button>
+        <button id="apply-button" type="button" disabled>OK</button>
+      </div>
       <p id="status-message" role="status" aria-live="polite"></p>
     </main>
     <script type="module" src="popup.js"></script>

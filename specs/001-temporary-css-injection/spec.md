@@ -80,6 +80,7 @@ As a user, I want a minimal popup interface that is easy to understand and use w
 - **FR-010**: The feature MUST prevent submission until the CSS is non-empty and valid, and the current page MUST remain unchanged when the user has not entered valid CSS.
 - **FR-011**: If the CSS cannot be applied, the feature MUST leave the current page usable and MUST provide feedback that the requested action did not take effect.
 - **FR-012**: The feature MUST allow repeated use so that a user can replace previously applied temporary CSS with newly entered CSS for the active tab.
+- **FR-013**: The extension MUST provide a Reset control that removes any currently injected styles from the active tab and clears the popup textarea, including any saved draft.
 
 ### Key Entities *(include if feature involves data)*
 

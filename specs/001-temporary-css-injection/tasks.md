@@ -93,6 +93,7 @@
 - [X] T018 [P] Update feature documentation and usage notes in `specs/001-temporary-css-injection/quickstart.md`
 - [X] T019 [P] Review source files for readability, naming consistency, and duplicate logic in `src/shared/`, `src/popup/`, and `src/injection/`
 - [X] T020 Validate the feature against the scenarios in `specs/001-temporary-css-injection/spec.md` and `specs/001-temporary-css-injection/quickstart.md`
+- [X] T021 [US1] Add a Reset control that removes injected styles from the active tab and clears the popup textarea and its saved draft in `src/popup/popup.html`, `src/popup/popup.ts`, `src/background/background.ts`, `src/injection/temporary-css.ts`, and `src/shared/types.ts`
 
 ---
 

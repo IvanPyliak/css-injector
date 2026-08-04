@@ -25,3 +25,21 @@ export async function applyTemporaryCss(
     return { ok: false, error: error instanceof Error ? error.message : String(error) };
   }
 }
+
+// Explicit reset path for the popup's Reset control, separate from the
+// implicit removal that happens on navigation/tab-close/restart.
+export async function removeTemporaryCss(
+  tabId: number,
+  previousCss: string | undefined
+): Promise<ApplyCssResponse> {
+  if (!previousCss) {
+    return { ok: true };
+  }
+
+  try {
+    await chrome.scripting.removeCSS({ target: { tabId }, css: previousCss });
+    return { ok: true };
+  } catch (error) {
+    return { ok: false, error: error instanceof Error ? error.message : String(error) };
+  }
+}

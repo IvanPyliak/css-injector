@@ -13,7 +13,12 @@ export interface ApplyCssRequest {
   css: string;
 }
 
-export type BackgroundRequest = ApplyCssRequest;
+export interface ResetCssRequest {
+  type: "reset-css";
+  tabId: number;
+}
+
+export type BackgroundRequest = ApplyCssRequest | ResetCssRequest;
 
 export interface ApplyCssResponse {
   ok: boolean;
