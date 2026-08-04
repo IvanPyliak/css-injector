@@ -1,0 +1,38 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editors and IDEs
+.idea/
+*.swp
+*.swo
+
+# Node / JavaScript
+node_modules/
+dist/
+build/
+coverage/
+.npm/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Misc caches
+.cache/
+temp/
+tmp/
