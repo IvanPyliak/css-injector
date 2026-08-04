@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Injector</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <label for="css-input">CSS</label>
+      <textarea
+        id="css-input"
+        rows="10"
+        placeholder="Enter CSS to apply to this tab"
+      ></textarea>
+      <button id="apply-button" type="button" disabled>OK</button>
+      <p id="status-message" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

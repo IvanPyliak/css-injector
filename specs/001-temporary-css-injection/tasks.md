@@ -16,9 +16,9 @@
 
 **Purpose**: Project initialization and basic extension structure
 
-- [ ] T001 Create the base extension project structure and source folders in `manifest.json`, `src/popup/`, `src/background/`, `src/injection/`, `src/shared/`, `tests/unit/`, and `tests/integration/`
-- [ ] T002 Initialize the TypeScript project scaffolding and build scripts in `package.json` and `tsconfig.json`
-- [ ] T003 [P] Add the initial extension manifest and entry-point wiring in `manifest.json` and `src/shared/`
+- [X] T001 Create the base extension project structure and source folders in `manifest.json`, `src/popup/`, `src/background/`, `src/injection/`, `src/shared/`, `tests/unit/`, and `tests/integration/`
+- [X] T002 Initialize the TypeScript project scaffolding and build scripts in `package.json` and `tsconfig.json`
+- [X] T003 [P] Add the initial extension manifest and entry-point wiring in `manifest.json` and `src/shared/`
 
 ---
 
@@ -28,10 +28,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Define shared feature types for CSS drafts, validation state, and injection state in `src/shared/types.ts`
-- [ ] T005 [P] Implement shared CSS validation and normalization helpers in `src/shared/css-validation.ts`
-- [ ] T006 [P] Implement shared message or state utilities for popup-to-background coordination in `src/shared/messaging.ts`
-- [ ] T007 Establish the temporary injection lifecycle model used by all stories in `src/injection/temporary-css.ts`
+- [X] T004 Define shared feature types for CSS drafts, validation state, and injection state in `src/shared/types.ts`
+- [X] T005 [P] Implement shared CSS validation and normalization helpers in `src/shared/css-validation.ts`
+- [X] T006 [P] Implement shared message or state utilities for popup-to-background coordination in `src/shared/messaging.ts`
+- [X] T007 Establish the temporary injection lifecycle model used by all stories in `src/injection/temporary-css.ts`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -45,10 +45,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Build the popup CSS entry view with textarea and OK control in `src/popup/popup.ts` and `src/popup/popup.html`
-- [ ] T009 [US1] Connect popup submission to the active-tab style application flow in `src/popup/popup.ts` and `src/background/background.ts`
-- [ ] T010 [US1] Implement the active-tab style application behavior in `src/injection/temporary-css.ts`
-- [ ] T011 [US1] Wire the popup to block submission until CSS is non-empty and valid in `src/popup/popup.ts`
+- [X] T008 [US1] Build the popup CSS entry view with textarea and OK control in `src/popup/popup.ts` and `src/popup/popup.html`
+- [X] T009 [US1] Connect popup submission to the active-tab style application flow in `src/popup/popup.ts` and `src/background/background.ts`
+- [X] T010 [US1] Implement the active-tab style application behavior in `src/injection/temporary-css.ts`
+- [X] T011 [US1] Wire the popup to block submission until CSS is non-empty and valid in `src/popup/popup.ts`
 
 **Checkpoint**: User Story 1 should be fully functional and independently demonstrable.
 
@@ -62,9 +62,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Implement temporary style removal behavior for page refresh and navigation in `src/injection/temporary-css.ts`
-- [ ] T013 [US2] Implement tab-close and browser-restart reset handling in `src/background/background.ts`
-- [ ] T014 [US2] Ensure the active page remains usable after style reset or failed restoration in `src/injection/temporary-css.ts`
+- [X] T012 [US2] Implement temporary style removal behavior for page refresh and navigation in `src/injection/temporary-css.ts`
+- [X] T013 [US2] Implement tab-close and browser-restart reset handling in `src/background/background.ts`
+- [X] T014 [US2] Ensure the active page remains usable after style reset or failed restoration in `src/injection/temporary-css.ts`
 
 **Checkpoint**: User Stories 1 and 2 should now both work independently.
 
@@ -78,9 +78,9 @@
 
 ### Implementation for User Story 3
 
-- [ ] T015 [US3] Refine the popup layout and minimal interaction states in `src/popup/popup.html` and `src/popup/popup.ts`
-- [ ] T016 [US3] Add user-facing feedback for blocked submission or failed application in `src/popup/popup.ts`
-- [ ] T017 [US3] Keep the popup flow focused and free of extra configuration or persistence controls in `src/popup/popup.html`
+- [X] T015 [US3] Refine the popup layout and minimal interaction states in `src/popup/popup.html` and `src/popup/popup.ts`
+- [X] T016 [US3] Add user-facing feedback for blocked submission or failed application in `src/popup/popup.ts`
+- [X] T017 [US3] Keep the popup flow focused and free of extra configuration or persistence controls in `src/popup/popup.html`
 
 **Checkpoint**: All user stories should now be independently functional.
 
@@ -90,9 +90,9 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T018 [P] Update feature documentation and usage notes in `specs/001-temporary-css-injection/quickstart.md`
-- [ ] T019 [P] Review source files for readability, naming consistency, and duplicate logic in `src/shared/`, `src/popup/`, and `src/injection/`
-- [ ] T020 Validate the feature against the scenarios in `specs/001-temporary-css-injection/spec.md` and `specs/001-temporary-css-injection/quickstart.md`
+- [X] T018 [P] Update feature documentation and usage notes in `specs/001-temporary-css-injection/quickstart.md`
+- [X] T019 [P] Review source files for readability, naming consistency, and duplicate logic in `src/shared/`, `src/popup/`, and `src/injection/`
+- [X] T020 Validate the feature against the scenarios in `specs/001-temporary-css-injection/spec.md` and `specs/001-temporary-css-injection/quickstart.md`
 
 ---
 

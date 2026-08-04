@@ -3,14 +3,13 @@
 ## Prerequisites
 
 - Chrome or another Chromium-based browser that supports Manifest V3 extensions.
-- A local build of the extension source once implementation exists.
 - Node.js LTS for dependency installation and build scripts.
 
 ## Setup
 
-1. Install dependencies.
-2. Build the extension.
-3. Load the unpacked extension into Chromium.
+1. Install dependencies: `npm install`
+2. Build the extension: `npm run build` (compiles TypeScript and copies static assets into `dist/`)
+3. Load the unpacked extension: open `chrome://extensions`, enable Developer mode, click "Load unpacked", and select the `dist/` folder.
 
 ## Validation Scenarios
 
@@ -31,9 +30,16 @@
 2. Leave the textarea empty or enter invalid CSS.
 3. Confirm the submission remains blocked and the page stays unchanged.
 
+### Scenario 4: Draft CSS text survives popup close
+1. Open the popup and type CSS into the textarea without clicking OK.
+2. Close the popup, then reopen it.
+3. Confirm the previously typed CSS text is still present in the textarea.
+4. Restart the browser and confirm the draft text is cleared.
+
 ## Expected Outcomes
 
 - The popup presents exactly the minimal input flow defined by the spec.
 - Valid CSS is applied immediately to the active tab.
 - Temporary styling does not survive page refresh, navigation, tab close, or browser restart.
 - The user cannot submit empty or invalid CSS.
+- Unsent draft CSS text in the textarea survives closing and reopening the popup within the same browser session, but not a browser restart.

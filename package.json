@@ -1,0 +1,15 @@
+{
+  "name": "css-injector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Temporarily inject custom CSS into the active browser tab.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node ./scripts/copy-assets.mjs",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "typescript": "^5.5.4"
+  }
+}
